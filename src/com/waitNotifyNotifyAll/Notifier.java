@@ -17,6 +17,7 @@ public class Notifier implements Runnable {
             synchronized (msg) {
                 msg.setMsg(name+" Notifier work done");
 //                msg.notify();
+                System.out.println(name + "Notified All!!!");
                 msg.notifyAll();
             }
         } catch (InterruptedException e) {
