@@ -13,9 +13,9 @@ public class Waiter implements Runnable{
         String name = Thread.currentThread().getName();
         synchronized (msg) {
             try{
-//            	Thread.sleep(5000);
+            	Thread.sleep(2000);
                 System.out.println(name+" waiting to get notified at time:"+System.currentTimeMillis());
-//              Thread.sleep(5000);
+              Thread.sleep(2000);
                 msg.wait();
             }catch(InterruptedException e){
                 e.printStackTrace();

@@ -42,6 +42,9 @@ class JoinExample {
 		ThreadJoining t2 = new ThreadJoining();
 		ThreadJoining t3 = new ThreadJoining();
 		ThreadJoining2 t4 = new ThreadJoining2();
+		t1.setName("t1");
+		t2.setName("t2");
+		t3.setName("t3");
 		t4.setName("XXXXXXXXXXXXXXX");
 		// thread t1 starts
 		t1.start();
